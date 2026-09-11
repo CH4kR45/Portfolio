@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-white text-slate-900 transition-colors duration-500 ease-in-out dark:bg-slate-950 dark:text-slate-100;
+  overflow-x: hidden;
+}
+
+/* Spotlight hover effect used by <SpotlightCard /> — the radial gradient
+   position is driven by --x / --y custom properties set on mousemove. */
+.spotlight-card {
+  position: relative;
+  isolation: isolate;
+}
+.spotlight-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: radial-gradient(
+    280px circle at var(--x, 50%) var(--y, 50%),
+    rgba(59, 99, 168, 0.55),
+    transparent 70%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  pointer-events: none;
+  z-index: 1;
+}
+.dark .spotlight-card::before {
+  background: radial-gradient(
+    280px circle at var(--x, 50%) var(--y, 50%),
+    rgba(130, 165, 219, 0.45),
+    transparent 70%
+  );
+}
+.spotlight-card:hover::before {
+  opacity: 1;
+}
+
+/* Hides the scrollbar on horizontally-scrollable rows (e.g. the Skills
+   category strip) while keeping native scroll/drag/wheel behavior. */
+.no-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+.no-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome/Safari */
+}
+
+/* Reduced motion: turn off decorative animation, keep functional transitions */
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee,
+  .animate-gradient-x {
+    animation: none !important;
+  }
+}
