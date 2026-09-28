@@ -18,7 +18,7 @@ export const NAV_LINKS = [
 export const LOGO_MARK = "Hans Christian Cañadido"; // Shown in the top-left corner of the nav bar and in the footer
 
 export const HERO = {
-  title: "Computer Science Graduate · Full-Stack & Mobile Developer",
+  title: "Computer Science Graduate · Smart App Developer",
   name: "Hans Christian Cañadido",
   intro:
     "I build across the stack — web, mobile, IoT, and AI/ML — with hands-on experience in UI/UX and graphic design as well. I like turning real-world problems into working software from end to end.",
