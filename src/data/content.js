@@ -270,13 +270,13 @@ export const PROJECTS = [
 ];
 
 export const GRAPHIC_DESIGN = [
-  { src: "/CAP.jpg", alt: "Graphic design piece 1" },
-  { src: "/Chess.png", alt: "Graphic design piece 2" },
-  { src: "/Table tennis.png", alt: "Graphic design piece 3" },
-  { src: "/Petangue_.png", alt: "Graphic design piece 4" },
-  { src: "/CODM.png", alt: "Graphic design piece 5" },
-  { src: "/ML.png", alt: "Graphic design piece 6" },
-  { src: "/MVP.png", alt: "Graphic design piece 7" },
+  { src: "/CAP.svg", alt: "Graphic design piece 1" },
+  { src: "/Chess.svg", alt: "Graphic design piece 2" },
+  { src: "/Table tennis.svg", alt: "Graphic design piece 3" },
+  { src: "/Petangue.svg", alt: "Graphic design piece 4" },
+  { src: "/CODM.svg", alt: "Graphic design piece 5" },
+  { src: "/ML.svg", alt: "Graphic design piece 6" },
+  { src: "/MVP.svg", alt: "Graphic design piece 7" },
 ];
 
 // No formal work experience yet, so this timeline currently holds
