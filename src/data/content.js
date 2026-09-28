@@ -235,6 +235,12 @@ export const PROJECTS = [
       "A web-based template based document generation system that automates document creation with dynamic templates. Designed the UI/UX, integrated Firebase with secure authentication, and handled testing, deployment, and ongoing support end to end.",
     tags: ["React", "TypeScript", "JavaScript", "Firebase"],
     link: "#",
+    images: [
+      "/D1.svg",
+      "/D2.svg",
+      "/D3.svg",
+      "/D4.svg",
+    ]
   },
   {
     title: "Texant — Handwriting-to-Text-to-Speech App",
@@ -242,6 +248,10 @@ export const PROJECTS = [
       "A mobile application that converts handwritten text into editable digital text, integrating OCR and text-to-speech technology, with text editing and document export built in.",
     tags: ["Mobile", "OCR", "Text-to-Speech"],
     link: "#",
+    images: [
+      "/T1.svg",
+      "/T2.svg",
+    ]
   },
   {
     title: "E-Commerce Store Website",
@@ -249,7 +259,14 @@ export const PROJECTS = [
       "A responsive online store with product browsing, cart, and checkout, including Messenger-based checkout for direct order submission and Firebase-managed products and orders.",
     tags: ["Web Frontend", "Supabase", "Messenger API"],
     link: "#",
-  },
+    images: [
+      "/F1.svg",
+      "/F2.svg",
+      "/F3.svg",
+      "/F4.svg",
+      "/F5.svg",
+      "/F6.svg",
+    ],  },
 ];
 
 export const GRAPHIC_DESIGN = [
